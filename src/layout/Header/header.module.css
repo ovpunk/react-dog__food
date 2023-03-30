@@ -1,0 +1,48 @@
+header {
+  background-color: #ffe500;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.logo h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.search__form {
+  margin: 25px 0;
+}
+.search {
+  border: none;
+  padding: 17px;
+  border-radius: 30px;
+  width: 380px;
+  margin: 0;
+  font-size: 20px;
+  outline: none;
+}
+
+.tools {
+  display: flex;
+  gap: 25px;
+}
+.logo {
+  margin-top: 0;
+}
+
+.tools li i {
+  font-size: 25px;
+}

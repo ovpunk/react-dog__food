@@ -1,0 +1,40 @@
+footer {
+  background-color: #ffe500;
+}
+
+.wrapper {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  /*align-items: center;*/
+}
+
+.logo {
+  margin: -16px 0 30px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.logo__desc {
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.nav li {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.contacts p {
+  font-weight: 700;
+}
+
+.contacts a {
+  display: block;
+  margin-bottom: 5px;
+}
