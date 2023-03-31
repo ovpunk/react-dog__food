@@ -36,6 +36,7 @@ button {
 }
 
 main {
+  display: grid;
   min-height: calc(100vh - 330px);
 }
 
@@ -43,10 +44,4 @@ main div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-self: center;
-}
-
-.error {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
