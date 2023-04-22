@@ -45,7 +45,7 @@
   background-image: linear-gradient(to bottom, #000, #000, rgba(0, 0, 0, 0));
 }
 
-.card__button {
+.basket__button {
   margin: 0 10px;
   background-color: #ffe500;
   padding: 8px 12px;
@@ -54,7 +54,21 @@
   font-weight: 600;
 }
 
-.card__button:hover {
+.basket__button:hover {
   box-shadow: 2px 2px 3px #ae9e0e;
+  transition: 0.3s;
+}
+
+.card__button {
+  margin: 0 10px;
+  /*background-color: #ffe500;*/
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.card__button:hover {
+  box-shadow: 2px 2px 1px #808080;
   transition: 0.3s;
 }

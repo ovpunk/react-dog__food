@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./header.module.css";
 
 export const Header = () => {
@@ -5,22 +6,24 @@ export const Header = () => {
     <header>
       <div className="container">
         <div className={styles.wrapper}>
-          <div className={styles.logo}>
-            <i className="fas fa-regular fa-bone"></i>
-            <h1>DogFood</h1>
-          </div>
+          <Link to="/products">
+            <div className={styles.logo}>
+              <i className="fas fa-regular fa-bone"></i>
+              <h1>DogFood</h1>
+            </div>
+          </Link>
           <form className={styles.search__form}>
             <input type="text" placeholder="Найти" className={styles.search} />
           </form>
           <ul className={styles.tools}>
             <li>
-              <i className="fa fa-light fa-heart"></i>
+              <i className="fas fa-light fa-heart"></i>
             </li>
             <li>
               <i className="fas fa-regular fa-bag-shopping"></i>
             </li>
             <li>
-              <i className="fas fa-light fa-dog"></i>
+              <Link to="/account">Личный кабинет</Link>
             </li>
           </ul>
         </div>

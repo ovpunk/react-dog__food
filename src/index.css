@@ -36,12 +36,13 @@ button {
 }
 
 main {
-  display: grid;
+  /*display: flex;
+  justify-content: center;*/
   min-height: calc(100vh - 330px);
 }
 
-main div {
+/*main div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-self: center;
-}
+}*/

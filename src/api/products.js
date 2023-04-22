@@ -1,6 +1,6 @@
 import { TOKEN } from "../utils/token";
 
-export const fetchProducts = () => {
+export const ProductsFetch = () => {
   return fetch("https://api.react-learning.ru/products", {
     headers: {
       Authorization: `Bearer ${TOKEN}`,

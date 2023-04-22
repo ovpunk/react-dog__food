@@ -1,0 +1,64 @@
+.container {
+  max-width: 1200px;
+  margin: 50px auto 50px;
+  box-shadow: 1px 1px 40px #808080;
+  border-radius: 20px;
+}
+
+.wrapper {
+  padding: 20px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 50px;
+}
+
+.img {
+  display: block;
+  margin: 0 auto 40px;
+  width: 300px;
+}
+
+.description {
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.wigth {
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.price {
+  max-width: 600px;
+  margin: 0 auto 60px;
+}
+
+.button {
+  display: block;
+  margin: 0 auto 50px;
+  width: 150px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #ffe500;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+}
+
+.button:hover {
+  box-shadow: 2px 2px 3px #ae9e0e;
+  transition: 0.3s;
+}
+
+span {
+  font-weight: 700;
+}
+
+.cross {
+  position: absolute;
+  top: 160px;
+  right: 140px;
+  font-size: 40px;
+}
