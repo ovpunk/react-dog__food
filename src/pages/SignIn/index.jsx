@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import * as Yup from "yup";
 import { signInFetch } from "../../api/signin";
-import { TOKEN } from "../../utils/token";
+import { TOKEN } from "../../constants/token";
 import styles from "./signin.module.css";
 import { useMutation } from "@tanstack/react-query";
 

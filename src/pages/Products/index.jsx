@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { ProductsFetch } from "../../api/products";
 import { ProductCard } from "../../components/ProductsCard/index";
-import { TOKEN } from "../../utils/token";
+import { TOKEN } from "../../constants/token";
 
 export const Products = () => {
   const navigate = useNavigate();

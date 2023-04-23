@@ -1,4 +1,4 @@
-import { TOKEN } from "../utils/token";
+import { TOKEN } from "../constants/token";
 
 export const userInfoFetch = () => {
   return fetch("https://api.react-learning.ru/v2/group-11/users/me", {
