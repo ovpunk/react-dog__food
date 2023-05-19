@@ -2,8 +2,10 @@ import { useQuery } from "@tanstack/react-query";
 import { useSelector } from "react-redux";
 import { productsFetch } from "../../api/products";
 import { ProductCard } from "../../components/ProductsCard/index";
+
 import { useAuth } from "../../hooks/useAuth";
 import styles from "./products.module.css";
+
 
 export const Products = () => {
   const { token } = useAuth();

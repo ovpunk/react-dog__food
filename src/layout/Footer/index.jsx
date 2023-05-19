@@ -1,5 +1,23 @@
 import styles from "./footer.module.css";
 
+const footerList = ["Каталог", "Акции", "Новости", "Отзывы"];
+const footerList2 = [
+  "Оплата и доставка",
+  "Часто спрашивают",
+  "Обратная связь",
+  "Контакты",
+];
+
+const UnorderedList = (currentList) => {
+  return (
+    <ul className={styles.nav}>
+      {currentList.list.map((item, index) => {
+        return <li key={index}>{item}</li>;
+      })}
+    </ul>
+  );
+};
+
 export const Footer = () => {
   const footerList = ["Каталог", "Акции", "Новости", "Отзывы"];
   const footerList2 = [
