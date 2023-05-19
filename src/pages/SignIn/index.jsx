@@ -1,12 +1,14 @@
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import * as Yup from "yup";
 import { signInFetch } from "../../api/signin";
-import { TOKEN } from "../../constants/token";
+
 import styles from "./signin.module.css";
 import { useMutation } from "@tanstack/react-query";
+import { useDispatch } from "react-redux";
+import { setUpUser } from "../../redux/slices/userSlice";
+import { useNoAuth } from "../../hooks/useNoAuth";
 
 const SignInSchema = Yup.object().shape({
   email: Yup.string()
@@ -16,12 +18,10 @@ const SignInSchema = Yup.object().shape({
 });
 
 export const SignIn = () => {
-  const navigate = useNavigate();
+  useNoAuth();
 
-  useEffect(() => {
-    const token = localStorage.getItem(TOKEN);
-    if (token) navigate("/products");
-  }, [navigate]);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const initialValues = {
     email: "",
@@ -31,10 +31,9 @@ export const SignIn = () => {
   const { mutateAsync, error, isError, isLoading } = useMutation({
     mutationFn: async (values) => {
       const res = await signInFetch(values);
-      const responce = await res.json();
-
       if (res.ok) {
-        localStorage.setItem(TOKEN, responce.token);
+        const responce = await res.json();
+        dispatch(setUpUser({ ...responce.data, token: responce.token }));
         return navigate("/products");
       }
     },

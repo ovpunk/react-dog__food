@@ -1,5 +1,5 @@
 .container {
-  max-width: 1200px;
+  max-width: 800px;
   margin: 50px auto 50px;
   box-shadow: 1px 1px 40px #808080;
   border-radius: 20px;
@@ -11,13 +11,13 @@
 .title {
   display: flex;
   justify-content: center;
-  margin: 50px 0 50px;
+  margin: 0px 0 50px;
 }
 
 .img {
   display: block;
   margin: 0 auto 40px;
-  width: 300px;
+  width: 200px;
 }
 
 .description {
@@ -37,7 +37,7 @@
 
 .button {
   display: block;
-  margin: 0 auto 50px;
+  margin: 0 auto 30px;
   width: 150px;
   font-size: 16px;
   font-weight: 600;
@@ -58,7 +58,7 @@ span {
 
 .cross {
   position: absolute;
-  top: 160px;
-  right: 140px;
+  top: 180px;
+  right: 340px;
   font-size: 40px;
 }

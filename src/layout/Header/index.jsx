@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Search } from "../../components/Search";
 import styles from "./header.module.css";
 
 export const Header = () => {
@@ -12,9 +13,7 @@ export const Header = () => {
               <h1>DogFood</h1>
             </div>
           </Link>
-          <form className={styles.search__form}>
-            <input type="text" placeholder="Найти" className={styles.search} />
-          </form>
+          <Search />
           <ul className={styles.tools}>
             <li>
               <i className="fas fa-light fa-heart"></i>

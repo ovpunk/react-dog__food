@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
+import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { TOKEN } from "../../constants/token";
 import styles from "./currentproduct.module.css";
@@ -11,6 +12,7 @@ export const CurrentProduct = () => {
     isError,
     error,
     isLoading,
+    isSuccess,
   } = useQuery({
     queryKey: ["getCurrentProduct", idOfProduct],
     queryFn: async () => {
@@ -28,6 +30,25 @@ export const CurrentProduct = () => {
       }
     },
   });
+
+  // для скрола после хедера
+  //useEffect(() => {
+  //  if (isSuccess) {
+  //    const $header = document.querySelector("header");
+  //    const headerHeight = $header ? $header.offsetHeight : 0;
+  //    window.scrollTo({
+  //      top: headerHeight,
+  //    });
+  //  }
+  //}, [isSuccess]);
+
+  useEffect(() => {
+    if (isSuccess) {
+      window.scrollTo({
+        top: 0,
+      });
+    }
+  }, [isSuccess]);
 
   if (isError) {
     return <p>Произошла ошибка: {error}</p>;

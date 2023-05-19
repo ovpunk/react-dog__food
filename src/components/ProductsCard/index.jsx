@@ -1,9 +1,10 @@
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../hooks/useAuth";
 import styles from "../ProductsCard/product-card.module.css";
 
 export const ProductCard = ({ product }) => {
   const navigate = useNavigate();
-
+  useAuth();
   return (
     <div className={styles.card}>
       <img
@@ -15,7 +16,7 @@ export const ProductCard = ({ product }) => {
       <div className={styles.card__wight}>{product.wight}</div>
       <div className={styles.card__description}>{product.description}</div>
       <div>
-        <button className={styles.basket__button} type="submit">
+        <button className={styles.basket__button} type="button">
           В корзину
         </button>
         <button

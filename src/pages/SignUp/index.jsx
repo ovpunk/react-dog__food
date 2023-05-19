@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+//import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { TOKEN } from "../../constants/token";
@@ -7,6 +7,7 @@ import styles from "./signup.module.css";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import { signUpFetch } from "../../api/signup";
 import { useMutation } from "@tanstack/react-query";
+import { useNoAuth } from "../../hooks/useNoAuth";
 
 const SignUpSchema = Yup.object().shape({
   email: Yup.string()
@@ -17,11 +18,7 @@ const SignUpSchema = Yup.object().shape({
 
 export const SignUp = () => {
   const navigate = useNavigate();
-
-  useEffect(() => {
-    const token = localStorage.getItem(TOKEN);
-    if (token) navigate("/products");
-  }, [navigate]);
+  useNoAuth();
 
   const initialValues = {
     email: "",

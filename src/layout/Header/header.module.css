@@ -1,5 +1,12 @@
 header {
   background-color: #ffe500;
+  /*position: fixed;*/
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  padding: 16px;
+  margin-bottom: 60px;
 }
 
 .wrapper {
@@ -20,19 +27,6 @@ header {
 .logo h1 {
   font-size: 30px;
   font-weight: 700;
-}
-
-.search__form {
-  margin: 25px 0;
-}
-.search {
-  border: none;
-  padding: 17px;
-  border-radius: 30px;
-  width: 380px;
-  margin: 0;
-  font-size: 20px;
-  outline: none;
 }
 
 .tools {
