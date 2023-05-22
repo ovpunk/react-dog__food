@@ -2,9 +2,27 @@
   margin: 0 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  /*grid-template-rows: repeat(2, 1fr);*/
   grid-column-gap: 80px;
   grid-row-gap: 44px;
+}
+
+.notfound {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.notfound__text {
+  opacity: 20%;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.notfound__icon {
+  opacity: 20%;
+  height: 100px;
 }
 
 @media screen and (max-width: 1180px) {

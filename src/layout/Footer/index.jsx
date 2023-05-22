@@ -22,22 +22,33 @@ export const Footer = () => {
   return (
     <footer>
       <div className="container">
-        <div className={styles.wrapper}>
-          <div className={styles.logo__wrapper}>
-            <div className={styles.logo}>
-              <i className="fas fa-regular fa-bone"></i>
-              <p>DogFood</p>
+        <ul className={styles.wrapper}>
+          <li className={styles.list}>
+            <div className={styles.logo__wrapper}>
+              <div className={styles.logo}>
+                <i className="fas fa-regular fa-bone"></i>
+                <p>DogFood</p>
+              </div>
+              <p className={styles.logo__desc}>
+                {" "}
+                ©«Интернет-магазин DogFood.ru»
+              </p>
             </div>
-            <p className={styles.logo__desc}> ©«Интернет-магазин DogFood.ru»</p>
-          </div>
-          <UnorderedList list={footerList} />
-          <UnorderedList list={footerList2} />
-          <div className={styles.contacts}>
-            <p>Мы на связи</p>
-            <a href="tel:89990000000">8 (999) 00-00-00</a>
-            <a href="mailto:dogfood.ru@gmail.com">dogfood.ru@gmail.com</a>
-          </div>
-        </div>
+          </li>
+          <li className={styles.list}>
+            <UnorderedList list={footerList} />
+          </li>
+          <li className={styles.list}>
+            <UnorderedList list={footerList2} />
+          </li>
+          <li className={styles.list}>
+            <div className={styles.contacts}>
+              <p>Мы на связи</p>
+              <a href="tel:89990000000">8 (999) 00-00-00</a>
+              <a href="mailto:dogfood.ru@gmail.com">dogfood.ru@gmail.com</a>
+            </div>
+          </li>
+        </ul>
       </div>
     </footer>
   );

@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import { TOKEN } from "../../constants/token";
+import { TOKEN } from "../../constants/constants";
 import styles from "./currentproduct.module.css";
 
 export const CurrentProduct = () => {

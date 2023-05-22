@@ -3,10 +3,13 @@ footer {
 }
 
 .wrapper {
+  margin: 0;
   padding-top: 30px;
-  display: flex;
-  justify-content: center;
-  gap: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
 .logo {
@@ -29,6 +32,9 @@ footer {
   margin-bottom: 20px;
 }
 
+.list {
+  margin: 0 auto;
+}
 .contacts p {
   font-weight: 700;
 }
