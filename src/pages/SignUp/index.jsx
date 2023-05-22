@@ -1,7 +1,7 @@
 //import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { TOKEN } from "../../constants/token";
+import { TOKEN } from "../../constants/constants";
 import * as Yup from "yup";
 import styles from "./signup.module.css";
 import { Formik, Field, Form, ErrorMessage } from "formik";
