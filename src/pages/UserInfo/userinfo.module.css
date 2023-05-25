@@ -13,7 +13,7 @@
 
 .img {
   display: block;
-  max-width: 200px;
+  max-width: 300px;
   margin: 0 auto 40px;
 }
 
@@ -32,7 +32,7 @@ span {
 
 .button {
   display: block;
-  margin: 30px auto 30px;
+  margin: 60px auto 70px;
   width: 150px;
   font-size: 16px;
   font-weight: 600;
